@@ -1,0 +1,14 @@
+<!-- <app-add-or-edit-film (onSave)="submitFilm()"></app-add-or-edit-film> -->
+<input
+        type="text"
+        [formControl]="film_form.controls.title">
+
+<textarea [formControl]="film_form.controls.synopsis"></textarea>
+
+<input type="number" [formControl]="film_form.controls.note"/>
+<button 
+        type="submit"
+        [disabled]="film_form.invalid"
+        (click)="submitFilm()">
+        SUBMIT
+</button>

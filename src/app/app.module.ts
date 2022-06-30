@@ -12,7 +12,7 @@ import { ListefilmsComponent } from './listefilms/listefilms.component';
   declarations: [
     AppComponent,
     AddOrEditFilmComponent,
-    ListefilmsComponent,
+    ListefilmsComponent
   ],
   imports: [
     BrowserModule,

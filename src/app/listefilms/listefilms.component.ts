@@ -11,7 +11,6 @@ export class ListefilmsComponent implements OnInit {
 
   @Input() films!: Film[];
 
-
   constructor( private filmService: FilmService) {   }
  
   ngOnInit(): void {

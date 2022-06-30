@@ -1,15 +1,5 @@
+<app-add-or-edit-film></app-add-or-edit-film>
+<app-listefilms></app-listefilms>
 
-<h1>Angular Router App</h1>
-<header>
-<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
-<nav>
-  <ul>
-    <li><a routerLink="/addfilm" routerLinkActive="active" ariaCurrentWhenActive="page">Ajouter Film</a></li>
-    <li><a routerLink="/listefilms" routerLinkActive="active" ariaCurrentWhenActive="page">Liste films</a></li>
-  </ul>
-</nav>
-<app-add-or-edit-film (Film)="addorupdatefilm($event)"></app-add-or-edit-film>
-<app-listefilms [films]="films"></app-listefilms>
-</header>
 <!-- The routed views render in the <router-outlet>-->
 <router-outlet></router-outlet>
